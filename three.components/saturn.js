@@ -11,7 +11,7 @@ const ringMaterial = new MeshStandardMaterial(
   { color: 0xddddff }
 )
 const ring = new Mesh(ringGeometry, ringMaterial)
-const planetTexture = new TextureLoader().load('./../img/saturnmap.jpg')//('img/saturnmap.jpg')
+const planetTexture = new TextureLoader().load('/saturnmap.jpg')//('img/saturnmap.jpg')
 const planet = new Mesh(
   new SphereGeometry(5, 20, 20),
   new MeshBasicMaterial({ map: planetTexture})
