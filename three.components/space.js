@@ -2,9 +2,11 @@ import {
   SphereGeometry,
   MeshStandardMaterial,
   Mesh,
-  MathUtils
+  MathUtils,
+  TextureLoader
   } from 'three'
-import { spaceTexture } from './textures.js'
+
+const spaceTexture = new TextureLoader().load('/spaceBackground.jpg')
 
 export default function addStar(scene) {
   const geometry = new SphereGeometry(0.25, 24, 24)
